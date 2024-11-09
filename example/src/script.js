@@ -5,11 +5,9 @@ function calculate(operator) {
     const errorElement = document.getElementById('error');
     let result;
 
-    // Очистити попередні повідомлення
     errorElement.textContent = '';
     resultElement.textContent = '';
 
-    // Перевірка на коректність введених даних
     if (!num1 || !num2) {
         errorElement.textContent = 'Введіть обидва числа.';
         return;
@@ -23,7 +21,6 @@ function calculate(operator) {
     const number1 = parseFloat(num1);
     const number2 = parseFloat(num2);
 
-    // Обробка математичних операцій
     switch (operator) {
         case '+':
             result = number1 + number2;
@@ -40,7 +37,7 @@ function calculate(operator) {
                 return;
             }
             result = number1 / number2;
-            result = Math.round(result * 100) / 100; // Заокруглення до сотих
+            result = Math.round(result * 100) / 100; 
             break;
         default:
             errorElement.textContent = 'Невірний оператор.';
