@@ -49,3 +49,10 @@ function calculate(operator) {
 
     resultElement.textContent = `Результат: ${result}`;
 }
+
+function clearCalculator() {
+    document.getElementById('num1').value = '';
+    document.getElementById('num2').value = '';
+    document.getElementById('result').textContent = '';
+    document.getElementById('error').textContent = '';
+}

@@ -1,3 +1,4 @@
+/* Існуючий CSS */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -50,6 +51,23 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.clear-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #ff1a1a;
 }
 
 #error {
